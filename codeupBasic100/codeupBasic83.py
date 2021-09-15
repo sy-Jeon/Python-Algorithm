@@ -10,6 +10,7 @@ for r_index in range(r):
 print(count)
 
 
+
 # 0 0 0 = 0
 # 0 0 1 = 1
 # 0 1 0 = 2
