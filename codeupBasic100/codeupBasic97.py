@@ -1,12 +1,14 @@
+from typing import DefaultDict
+
+
 h, w = input().split()
 h, w = int(h), int(w)
 n = int(input())
 
 column = []
-for i in range(h+1):
+for i in range(h):
     column.append([])
-    print(column)
-    for j in range(h+1):
+    for j in range(w):
         column[i].append(0)
 
 
@@ -25,6 +27,6 @@ for i in range(n):
             x += 1
 
 for i in range(h):
-    for j in range(h):
+    for j in range(w):
         print(column[i][j], end=" ")
     print()
