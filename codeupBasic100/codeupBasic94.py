@@ -8,4 +8,5 @@ s = a[0]
 for i in range(n):
     if a[i] < s:
         s = a[i]
+        
 print(s)
