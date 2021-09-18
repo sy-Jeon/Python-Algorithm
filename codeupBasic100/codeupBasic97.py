@@ -1,6 +1,3 @@
-from typing import DefaultDict
-
-
 h, w = input().split()
 h, w = int(h), int(w)
 n = int(input())
