@@ -21,11 +21,11 @@ x, y = 1, 1
 while x != feed_x  or y != feed_y:
     mazemap[x][y] = 9
     # 움직이기
-    if mazemap[x][y+1] != 0:
-        x += 1
-    else:
+    if mazemap[x][y+1] != 1:
         y += 1
-    
+    else:
+        x += 1
+
     if x < 9 and y < 9:
         mazemap[x][y] = 9
     else:
