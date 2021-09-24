@@ -1,8 +1,18 @@
+'''
+Create a stack process program that processes commands.
+
+info.
+push X: integer x into the stack
+pop: pop and output the highest integer. If the stack is empty, output -1.
+size: output the number of integers
+empty: If the stack is empty, output -1 or 1.
+top: output the highest integer. If the stack is empty, output -1.
+'''
+
 import sys
 
 n = int(input())
 stack = []
-
 for i in range(n):
     s = sys.stdin.readline().split()
     if s[0].find("push") == 0:
