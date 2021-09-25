@@ -13,6 +13,7 @@ import sys
 
 n = int(input())
 stack = []
+
 for i in range(n):
     s = sys.stdin.readline().split()
     if s[0].find("push") == 0:
