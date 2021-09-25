@@ -1,7 +1,7 @@
 '''
 Question: Reverse the words.
 
-info.
+Info.
 t is the number of inputs.
 command is word.
 '''
