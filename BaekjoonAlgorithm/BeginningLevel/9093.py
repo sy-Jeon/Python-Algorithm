@@ -15,4 +15,4 @@ for i in range(t):
     for j in range(len(command)):
         command[j] = command[j][::-1]
         print(command[j], end=" ")
-    print()
+    print() 
