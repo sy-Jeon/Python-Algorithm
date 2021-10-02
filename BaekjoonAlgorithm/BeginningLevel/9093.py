@@ -1,5 +1,5 @@
 '''
-Question: Reverse the words.
+Reverse the words.
 
 Info.
 t is the number of inputs.
