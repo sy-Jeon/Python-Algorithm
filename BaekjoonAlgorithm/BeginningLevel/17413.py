@@ -23,4 +23,5 @@ for i in text:
             tag = 0
             result += word
             word = ''
+
 print(result + word)
