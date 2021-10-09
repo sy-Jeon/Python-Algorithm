@@ -16,12 +16,12 @@ for i in text:
             word = ''
         else:
             word = i + word
-
+            
     elif tag:
         word += i
         if i == '>':
             tag = 0
             result += word
             word = ''
-
+            
 print(result + word)
