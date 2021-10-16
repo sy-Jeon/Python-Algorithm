@@ -48,4 +48,5 @@ for i in range(len(ironbar)):
                 count_r = 0
         else:
             continue
+        
 print(iron)
