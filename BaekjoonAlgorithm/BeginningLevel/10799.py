@@ -24,6 +24,7 @@ count_l = 0
 count_r = 0
 iron = 0
 isR = 0
+
 for i in range(len(ironbar)):
         if i+1 < len(ironbar):
             if ironbar[i+1] != ")" and ironbar[i] == "(":
