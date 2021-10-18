@@ -4,7 +4,6 @@
 # count = 0
 # iron = 0
 # for i in ironbar:
-
 #     # 레이저 찾기
 #     if i == "(":
 #         count += 1
