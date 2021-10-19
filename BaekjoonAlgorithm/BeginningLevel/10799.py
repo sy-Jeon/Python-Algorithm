@@ -17,7 +17,6 @@
 #             count = 0
 
 ironbar = list(input())
-
 laser = 0
 count_l = 0
 count_r = 0
