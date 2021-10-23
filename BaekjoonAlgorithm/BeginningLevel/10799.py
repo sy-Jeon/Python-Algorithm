@@ -1,13 +1,13 @@
-bar_razor = list(input())
+bar_laser = list(input())
 answer = 0
 stack = []
 
-for i in range(len(bar_razor)):
-    if bar_razor[i] == '(':
+for i in range(len(bar_laser)):
+    if bar_laser[i] == '(':
         stack.append('(')
         
     else:
-        if bar_razor[i-1] == '(':
+        if bar_laser[i-1] == '(':
             stack.pop()
             answer += len(stack)
             
