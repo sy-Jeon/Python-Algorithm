@@ -1,7 +1,7 @@
 import sys
 
-count = int(sys.stdin.readline())
-num = list(sys.stdin.readline())
+count = int(input())
+num = list(input())
 
 num_list = [0] * count
 for i in range(count):
@@ -9,7 +9,7 @@ for i in range(count):
 
 stack = []
 for i in num:
-    if "A" <= i <= "Z":
+    if i.isalpha():
         stack.append(num_list[ord(i) - ord("A")])
 
     else:
@@ -27,4 +27,4 @@ for i in num:
 
         stack.append(c)
 
-print(format(stack[0], "%0.2f"))
+print("%.2f" %stack[-1])
