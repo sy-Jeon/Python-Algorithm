@@ -1,7 +1,7 @@
 from collections import Counter
 
 n = int(input())
-nums = list(map(int,input().split()))
+nums = list(map(int, input().split()))
 counter = Counter(nums)
 stack = []
 ngf = [-1] * n
