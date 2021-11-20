@@ -9,7 +9,7 @@ for i in num:
         if i == '(':
             stack.append(i)
         elif i == '*' or i == '/':
-            # A*B*C 일 때 Stack에 첫번 째 *이 쌓이고 두번 째 *일 때 stack에 있는 첫번 째 *을 answer에 붙인다.
+            # A*B*C 일 때 Stack에 첫번째 *이 쌓이고 두번 째 *일 때 stack에 있는 첫번째 *을 answer에 붙인다.
             while stack and (stack[-1] == '*' or stack[-1] == '/'):
                 answer += stack.pop()
             stack.append(i)
