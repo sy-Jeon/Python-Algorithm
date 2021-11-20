@@ -13,7 +13,7 @@ for i in num:
         stack.append(num_list[ord(i) - ord("A")])
 
     else:
-        bb = stack.pop()
+        b = stack.pop()
         a = stack.pop()
         
         if i == "*":
