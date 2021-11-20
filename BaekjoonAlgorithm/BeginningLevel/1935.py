@@ -28,3 +28,4 @@ for i in num:
         stack.append(c)
 
 print("%.2f" %stack[-1])
+
