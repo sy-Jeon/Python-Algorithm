@@ -10,7 +10,7 @@ while c <= t :
 
 answer = [0] * count
 
-s = "baekjoon"
+s = input()
 
 for i in s:
     for j in range(len(alphabet)):
