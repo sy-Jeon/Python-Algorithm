@@ -10,16 +10,16 @@ while True:
 
     for i in range(len(s)):
 
-        if 'a' <= s[i] <= 'z':
+        if s[i].islower():
             small += 1
 
-        elif 'A' <= s[i] <= 'Z':
+        elif s[i].isupper():
             capital += 1
         
-        elif s[i] <= ' ':
-            space += 1
-
         elif s[i].isdigit():
             num += 1
+
+        else:
+            space += 1
 
     print(small, capital, num, space)
