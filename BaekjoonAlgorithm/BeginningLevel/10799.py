@@ -1,17 +1,25 @@
-bar_laser = list(input())
+import sys
 
-answer = 0
-stack = []
+while True:
+    s = sys.stdin.readline().rstrip('\n')
 
-for i in range(len(bar_laser)):
-    if bar_laser[i] == '(':
-        stack.append('(')
-    else:
-        if bar_laser[i-1] == '(':
-            stack.pop()
-            answer += len(stack)
+    if not s:
+        break
+    
+    small, capital, num, space = 0, 0, 0, 0
+
+    for i in range(len(s)):
+
+        if s[i].islower():
+            small += 1
+
+        elif s[i].isupper():
+            capital += 1
+        
+        elif s[i].isdigit():
+            num += 1
+
         else:
-            stack.pop() 
-            answer += 1
+            space += 1
 
-print(answer)
+    print(small, capital, num, space)
