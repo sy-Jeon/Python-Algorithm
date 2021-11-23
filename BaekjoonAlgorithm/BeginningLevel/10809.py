@@ -1,24 +1,36 @@
-c = ord("a")
-t = ord('z')
-alphabet = []
-count = 0
 
-while c <= t :
-    alphabet.append(chr(c))
-    c += 1
-    count += 1
-answer = [-1] * count
-
+'''
+Modified code.
+'''
 s = input()
-location_count = -1
 
-for i in s:
-    for j in range(len(alphabet)):
+alphabet = list(range(97, 123))
 
-        if i == alphabet[j]:
-            location_count += 1
+for i in alphabet:
+    print(s.find(chr(i)), end=" ")
+    
 
-            if answer[j] <= -1:
-                answer[j] = location_count
+# c = ord("a")
+# t = ord('z')
+# alphabet = []
+# count = 0
 
-print(*answer)
+# while c <= t :
+#     alphabet.append(chr(c))
+#     c += 1
+#     count += 1
+# answer = [-1] * count
+
+# s = input()
+# location_count = -1
+
+# for i in s:
+#     for j in range(len(alphabet)):
+
+#         if i == alphabet[j]:
+#             location_count += 1
+
+#             if answer[j] <= -1:
+#                 answer[j] = location_count
+
+# print(*answer)
