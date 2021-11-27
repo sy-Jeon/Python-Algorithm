@@ -1,5 +1,5 @@
-# # The greatest common divisor
-# # The leaste common multiple
+# The greatest common divisor
+# The leaste common multiple
 n1, n2 = input().split()
 a, b = int(n1), int(n2)
 
