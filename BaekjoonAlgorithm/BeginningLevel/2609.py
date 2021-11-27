@@ -1,16 +1,18 @@
 # The greatest common divisor
 # The leaste common multiple
-n1, n2 = input().split()
+import sys
+n1, n2 = map(int, sys.stdin.readline().split())
 a, b = int(n1), int(n2)
 
 '''
 way 1 ---------------------------------------------------
 '''
-while a % b > 0:
-    a, b, c = b, a % b, a * b
+while b != 0:
+    a = a % b
+    a, b = b, a
 
-print(b)
-print(c // b)
+print(a)
+print(int(n1) * int(n2) // a)
 
 '''
 way 2 ---------------------------------------------------
