@@ -1,13 +1,19 @@
+'''
+Time over
+'''
 n = list(map(int, input().split()))
 
-num = []
+seq = []
+index = 0
 for i in range(n[0], n[1]+1):
-    num.append(i)
+    seq.append(i)
+    check = 0
+    for j in range(1, seq[index]+1):
+        if seq[index] % j == 0:
+            check += 1
 
-check = 0
-for i in range(len(num)+1):
-    if num[i] % i == 0:
-        check += 1
-    
-if check == 2:
-    print(num[i])
+
+    if check == 2:
+        print(seq[index])
+
+    index += 1
