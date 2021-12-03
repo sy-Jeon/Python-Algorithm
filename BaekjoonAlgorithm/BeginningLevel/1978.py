@@ -1,7 +1,7 @@
 x = int(input())
 n = list(map(int, input().split()))
-
 count = 0
+
 for i in range(x):
 
     check = 0
