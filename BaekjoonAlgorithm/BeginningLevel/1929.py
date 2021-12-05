@@ -1,15 +1,13 @@
 m, n = map(int, input().split())
 
 for i in range(m, n+1):
-    if i > 1:
-        if i % 2 == 0:
-            if i == 2:
-                print(i)
-        elif i % 3 == 0:
-            if i == 3:
-                print(i)
-        else:
-            print(i)
+    if i < 1:
+        continue
+    for j in range(2, int(i ** 0.5)+1):
+        if i % j == 0:
+            break
+    else:
+        print(i)
             
 
 '''
