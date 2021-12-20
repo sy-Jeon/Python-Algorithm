@@ -12,4 +12,5 @@ Today it is still unproven whether the conjecture is right. (Oh wait, I have the
 Anyway, your task is now to verify Goldbach's conjecture for all even numbers less than a million.
 '''
 
-print("hello world")
+n = int(input())
+print(type(n))
