@@ -12,5 +12,12 @@ Today it is still unproven whether the conjecture is right. (Oh wait, I have the
 Anyway, your task is now to verify Goldbach's conjecture for all even numbers less than a million.
 '''
 
-n = int(input())
-print(type(n))
+r= 1000000
+
+check = [True for _ in range(r)]
+
+for i in range(2,int(r**0.6)):
+    if check[i]==True:
+        for j in range(i*2, r, i) : 
+            if check[j] == True :
+                check[j] = False            #에라토스테네스의 체
