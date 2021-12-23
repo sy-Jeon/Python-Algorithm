@@ -12,12 +12,44 @@ Today it is still unproven whether the conjecture is right. (Oh wait, I have the
 Anyway, your task is now to verify Goldbach's conjecture for all even numbers less than a million.
 '''
 
-r= 1000000
+# r= 1000000
 
-check = [True for _ in range(r)]
+# check = [True for _ in range(r)]
 
-for i in range(2,int(r**0.5)+1):
-    if check[i]==True:
-        for j in range(i*2, r, i) : 
-            if check[j] == True :
-                check[j] = False            #에라토스테네스의 체
+# for i in range(2,int(r**0.6)):
+#     if check[i]==True:
+#         for j in range(i*2, r, i) : 
+#             if check[j] == True :
+#                 check[j] = False            #에라토스테네스의 체
+
+# print(check)
+
+
+
+
+#에라토스테네스의 체
+total_n = 1000000
+prime_check = [True for _ in range(total_n)]
+
+print(int(3 ** 0.5)+1)
+# for i in range(2, int(total_n ** 0.5)+1):
+
+#     for j in range(1, )
+
+
+# import sys
+
+# while True:
+#     n = sys.stdin.readline().strip('\n')
+
+#     if not n:
+#         break
+
+#     if int(n) <= 4:
+#         continue
+
+#     # 8에서 5을 뽑아낸다.
+#     for i in range(int(n)-1, -1, -1):
+#         if int(n) % 2 != 0:
+#             print(i)
+#             break
