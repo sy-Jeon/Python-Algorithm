@@ -31,6 +31,20 @@ Anyway, your task is now to verify Goldbach's conjecture for all even numbers le
 total_n = 1000000
 prime_check = [True for _ in range(total_n)]
 
+for i in range(3, len(prime_check)+1):
+
+    for j in range(2, int(total_n ** 0.5)+1):
+
+        if i % j == 0:
+            break
+
+    else:
+        prime_check[i] = False
+
+print(prime_check)
+
+print(int(1000000 ** 0.5)+1)
+
 print(int(3 ** 0.5)+1)
 # for i in range(2, int(total_n ** 0.5)+1):
 
