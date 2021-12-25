@@ -46,9 +46,6 @@ print(prime_check)
 print(int(1000000 ** 0.5)+1)
 
 print(int(3 ** 0.5)+1)
-# for i in range(2, int(total_n ** 0.5)+1):
-
-#     for j in range(1, )
 
 
 # import sys
