@@ -5,6 +5,6 @@ def fib_naive(n):
         return 1
     else:
         fib = fib_naive(n-1) + fib_naive(n-2)
-        return print(fib)
+        return fib
     
-fib_naive(4)
+fib_naive(5)
