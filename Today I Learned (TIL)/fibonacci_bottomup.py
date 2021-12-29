@@ -11,3 +11,5 @@ def fib_dp(n):
         fib_array.append(num)
         
     return fib_array[n]
+
+fib_dp(5)
