@@ -1,17 +1,16 @@
-import sys
-
-read = sys.stdin.readline
-N = int(read())
-
-cache = [-1] * (N+3)
-cache[1] = 0
-cache[2] = cache[3] = 1
-
-for i in range(4, N+1):
-    cnt = 10**6
+import math
+ 
+def solve():
+  n = int(input())
+  arr = [0, 0, 1, 1]
+  for i in range(4, n+1):
+    one, two, three = math.inf, math.inf, arr[i-1]
     if i % 3 == 0:
-        cnt = min(cache[i//3], cnt)
+      one = arr[i//3]
     if i % 2 == 0:
-        cnt = min(cache[i//2], cnt)
-    
-    cache[i] = min(cache[i-1], cnt) + 1
+      two = arr[i//2]
+    value = 1 + min(one, two, three)     
+    arr.append(value)
+  print(arr[n])
+ 
+solve()
