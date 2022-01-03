@@ -2,8 +2,8 @@ import math
  
 def solve():
     n = int(input())
-
     arr = [0, 0, 1, 1]
+   
     for i in range(4, n+1):
         one, two, three = math.inf, math.inf, arr[i-1]
     
@@ -15,5 +15,7 @@ def solve():
       
         value = 1 + min(one, two, three)     
         arr.append(value)
- 
+
+    print(value)
+    
 solve()
