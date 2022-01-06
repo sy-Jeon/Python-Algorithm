@@ -17,5 +17,4 @@ def solve():
         arr.append(value)
 
     print(value)
-    
 solve()
