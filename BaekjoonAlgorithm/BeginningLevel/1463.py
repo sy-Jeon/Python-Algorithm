@@ -19,6 +19,6 @@ def solve():
         value = 1 + min(one, two, three)     
         arr.append(value)
 
-    print(value)
+    print(arr[n])
     
 solve()
