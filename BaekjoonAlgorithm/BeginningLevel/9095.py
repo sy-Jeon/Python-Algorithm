@@ -1,7 +1,9 @@
-t = int(input())
-ott = [1, 2, 4]
-for i in range(3, 10):
-    ott.append(ott[i - 3] + ott[i - 2] + ott[i - 1])
-for i in range(t):
+total_n = int(input())
+arr = [1, 2, 4]
+
+for j in range(3, 10):
+    arr.append(arr[j-1] + arr[j-2] + arr[j-3])
+
+for i in range(total_n):
     n = int(input())
-    print(ott[n - 1])
+    print(arr[n-1])
