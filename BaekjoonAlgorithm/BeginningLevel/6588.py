@@ -20,14 +20,14 @@ Anyway, your task is now to verify Goldbach's conjecture for all even numbers le
 #     if check[i]==True:
 #         for j in range(i*2, r, i) : 
 #             if check[j] == True :
-#                 check[j] = False            #에라토스테네스의 체
+#                 check[j] = False            #Sieve of Eratosthenes
 
 # print(check)
 
 
 
 
-#에라토스테네스의 체
+#Sieve of Eratosthenes
 total_n = 1000000
 prime_check = [True for _ in range(total_n)]
 
@@ -59,7 +59,7 @@ print(int(3 ** 0.5)+1)
 #     if int(n) <= 4:
 #         continue
 
-#     # 8에서 5을 뽑아낸다.
+#     # Pop 5 from 8
 #     for i in range(int(n)-1, -1, -1):
 #         if int(n) % 2 != 0:
 #             print(i)
